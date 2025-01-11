@@ -26,12 +26,12 @@ export const GlobalProvider = ({ children }: { children: ReactNode }) => {
     fn: getCurrentUser,
   });
 
-  const isLogged = !!user;
+  const isLoggedIn = !!user;
 
   return (
     <GlobalContext.Provider
       value={{
-        isLogged,
+        isLoggedIn,
         user,
         loading,
         refetch,
