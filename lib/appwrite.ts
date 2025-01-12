@@ -122,8 +122,6 @@ export async function getProperties({
   query: string;
   limit?: number;
 }) {
-  console.log(filter, query, limit);
-
   try {
     const buildQuery = [Query.orderDesc("$createdAt")];
 
